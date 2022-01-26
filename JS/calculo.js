@@ -1,15 +1,20 @@
 'use strict'
 
+function camposValidos(nome, altura, peso){
+    // return nome !== '' && altura !== '' && peso !== ''
+    //Outra forma de validação
+    document.getElementById('form').reportValidity()
+}
 function mostrarResultado(){
     const nome = document.getElementById('nome').value
     const altura = document.getElementById('altura').value
     const peso = document.getElementById('peso').value
     const resultado = document.getElementById('resultado')
-    let indice = ''
+ 
     
-    if(nome!=='' && altura !=='' && peso!==''){
+    if(camposValidos(nome, altura, peso)){
         const calculoImc = peso / (altura * altura)
-        
+        let indice = ''
         if(calculoImc <= 18.5){
             indice = 'você está abaixo de peso'
         }else if(calculoImc < 25){
