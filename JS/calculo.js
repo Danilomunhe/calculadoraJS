@@ -13,7 +13,7 @@ function classificarImc(imc){
     if(imc <= 18.5){
         indice = 'você está abaixo de peso'
     }else if(imc < 25){
-        indice = `seu peso está normal.Parabens`
+        indice = `seu peso está normal.`
     }else if(imc < 30){
         indice = 'você está com sobrepeso'
     }else if(imc < 35){
