@@ -42,7 +42,7 @@ function mensagens(imc){
         texto = document.createTextNode("")
         mensagem.appendChild(texto)
         mensagem.classList.remove('verde')
-        mensagem.classList.add('vermelho')
+        mensagem.classList.remove('vermelho')
     }
     return mensagem
 }
