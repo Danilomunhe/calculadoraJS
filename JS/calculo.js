@@ -65,4 +65,13 @@ function mostrarResultado(){
 
 }
 
+let range = document.getElementById('peso'),
+    value = document.getElementById('valorPeso');
+
+range.addEventListener('click', valorPesoRange )
+
+function valorPesoRange(){
+    value.textContent = range.value;
+}
+
 document.getElementById('calcular').addEventListener('click', mostrarResultado)
