@@ -1,5 +1,4 @@
 'use strict'
-import{ iniciarRange } from "./range.js"
 
 function camposValidos(){
     // return nome !== '' && altura !== '' && peso !== ''
