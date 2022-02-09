@@ -79,3 +79,15 @@ button {
 .vermelho {
     color: red;
 }
+.peso, .altura{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+span{
+    text-align: center;
+    font-size: 1.5rem;
+}

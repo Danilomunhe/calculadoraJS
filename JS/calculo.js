@@ -1,4 +1,5 @@
 'use strict'
+import{ iniciarRange } from "./range.js"
 
 function camposValidos(){
     // return nome !== '' && altura !== '' && peso !== ''
@@ -68,10 +69,17 @@ function mostrarResultado(){
 let range = document.getElementById('peso'),
     value = document.getElementById('valorPeso');
 
+let rangeAltura = document.getElementById('altura'), 
+    valueAltura = document.getElementById('valorAltura');    
+
 range.addEventListener('click', valorPesoRange )
+rangeAltura.addEventListener('click', valorAlturaRange )
 
 function valorPesoRange(){
     value.textContent = range.value;
+}
+function valorAlturaRange(){
+   valueAltura.textContent = rangeAltura.value;
 }
 
 document.getElementById('calcular').addEventListener('click', mostrarResultado)
